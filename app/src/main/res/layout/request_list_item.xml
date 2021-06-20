@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_bottom_border"
+    android:padding="@dimen/space10">
+
+    <Button
+        android:id="@+id/bt_decline"
+        style="@style/ButtonRoundedOrange"
+        android:layout_width="112dp"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/bt_accept"
+        android:layout_marginStart="120dp"
+        android:paddingLeft="@dimen/space10"
+        android:paddingRight="@dimen/space10"
+        android:text="Decline" />
+
+    <Button
+        android:id="@+id/bt_accept"
+        style="@style/ButtonRoundedOrange"
+        android:layout_width="112dp"
+        android:layout_height="36dp"
+        android:layout_alignBottom="@+id/imageView"
+        android:paddingLeft="@dimen/space10"
+        android:paddingRight="@dimen/space10"
+        android:text="Accept" />
+
+    <LinearLayout
+        android:layout_width="230dp"
+        android:layout_height="131dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="11dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtviewNama1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Miami Lounge"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space5"
+                android:text="Tujuan : "
+                android:textColor="@color/textGray"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtviewTujuan"
+            android:layout_width="201dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="@dimen/space5"
+            android:text="Toyota Alphard"
+            android:textColor="@color/textGray"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="146dp"
+        android:layout_height="175dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="0dp"
+        app:srcCompat="@drawable/logo" />
+</RelativeLayout>

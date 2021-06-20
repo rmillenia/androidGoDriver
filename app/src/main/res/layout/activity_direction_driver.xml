@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/map1"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="488dp"
+        android:layout_above="@+id/panelInfo"
+        android:layout_marginBottom="1dp" />
+
+    <LinearLayout
+        android:id="@+id/panelInfo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Route Information :"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:elevation="1dp"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="Start Address : "
+                    android:textSize="14sp"
+                    android:padding="2dp"/>
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:scrollbars="none">
+
+                    <TextView
+                        android:id="@+id/tvStartAddress1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:paddingTop="2dp"
+                        android:text="Pick up from"
+                        android:textSize="14sp" />
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="0dp"
+                android:layout_marginVertical="5dp"
+                android:background="@android:color/darker_gray"></LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="End Address   : "
+                    android:padding="2dp"
+                    android:textSize="14sp"/>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="29dp"
+                    android:scrollbars="none">
+
+                    <TextView
+                        android:id="@+id/tvEndAddress1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:paddingTop="2dp"
+                        android:text="Destination Location"
+                        android:textSize="14sp" />
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="0dp"
+                android:layout_marginVertical="5dp"
+                android:background="@android:color/darker_gray"></LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_white_top_border"
+            android:weightSum="3">
+            <TextView
+                android:id="@+id/tvPrice1"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/space20"
+                android:paddingLeft="@dimen/space20"
+                android:text="Rp. 300.000"
+                style="@style/TextView14spGrayPad"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/tvDistance1"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/distance"
+                android:paddingRight="@dimen/space20"
+                android:paddingLeft="@dimen/space20"
+                android:text="1 Km"
+                style="@style/TextView14spGrayPad"
+                android:gravity="center"
+                android:background="@drawable/bg_white_left_border"/>
+            <TextView
+                android:id="@+id/tvDuration1"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/duration"
+                android:paddingRight="@dimen/space20"
+                android:paddingLeft="@dimen/space20"
+                android:text="2 hours"
+                style="@style/TextView14spGrayPad"
+                android:gravity="center"
+                android:background="@drawable/bg_white_left_border"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnFinish1"
+            style="@style/ButtonOrange"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/info"
+            android:text="Finish"
+            android:textColor="@color/black"
+            android:textStyle="italic" />
+    </LinearLayout>
+</RelativeLayout>

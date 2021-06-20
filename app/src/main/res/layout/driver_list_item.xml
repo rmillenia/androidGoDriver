@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_bottom_border"
+    android:padding="@dimen/space10">
+
+    <Button
+        android:id="@+id/bt_select"
+        style="@style/ButtonRoundedOrange"
+        android:layout_width="112dp"
+        android:layout_height="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="70dp"
+        android:paddingLeft="@dimen/space10"
+        android:paddingRight="@dimen/space10"
+        android:text="Select" />
+
+    <LinearLayout
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="11dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtviewNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Miami Lounge"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space5"
+                android:text="No Hp : "
+                android:textColor="@color/textGray"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txtviewTelp"
+                android:layout_width="165dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space5"
+                android:text="Toyota Alphard"
+                android:textColor="@color/textGray"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="137dp"
+        android:layout_height="123dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="14dp"
+        app:srcCompat="@drawable/logo" />
+</RelativeLayout>
